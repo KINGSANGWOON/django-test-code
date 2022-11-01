@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: 'a933e703-0094-4472-86db-1ff64b0ba609'
 
   # Web app name
-  webAppName: 'devopsTestlim'
+  webAppName: 'testtesttest33'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
