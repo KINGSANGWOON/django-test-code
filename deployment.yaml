@@ -15,8 +15,9 @@ spec:
     spec:
       containers:
       - name: django
-        image: limsangwoon/kk:latest
+        image: limsangwoon/kk
         ports:
         - name: http
           containerPort: 80
           protocol: TCP
+
