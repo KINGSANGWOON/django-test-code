@@ -7,3 +7,7 @@
 #### minikube addons list     // ingress 확인 
 #### minikube addons enable igress
 
+
+
+
+### 최종 목표는 argo로 배포하는 것까지 
