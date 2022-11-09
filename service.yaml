@@ -1,22 +1,17 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
-  name: django
+  name: hello
+  labels:
+    app: django
 spec:
-  replicas: 3
+  type: NodePort
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 31000
   selector:
-    matchLabels:
-      app: django
-  template:
-    metadata:
-      name: django
-      labels:
-        app: django
-    spec:
-      containers:
-      - name: django
-        image: limsangwoon/kk
-        ports:
-        - name: http
-          containerPort: 80
-          protocol: TCP
+    app: django
+
